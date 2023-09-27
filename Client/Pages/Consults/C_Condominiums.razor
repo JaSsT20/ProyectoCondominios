@@ -1,0 +1,50 @@
+@page "/C_Condominiums"
+
+<div class="card">
+    <div class="card-header">
+        <h2>Consult of Condominiums</h2>
+    </div>
+
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="CondominioId" class="form-label">ID</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="CondominioId" disabled>
+                <button type="button" class="btn btn-outline-primary oi oi-magnifying-glass"></button>
+                <button type="button" class="btn btn-outline-primary oi oi-reload"></button>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Condominio ID</th>
+                    <th>Contrato <span class="oi oi-code"></span></th>
+                    <th>Propietario</th>
+                    <th>Cantidad de Apartamentos <span class="oi oi-building"></span></th>
+                    <th>Dueño del Apartamento <span class="oi oi-building"></span></th>
+                    <th>Ubicación</th>
+                    <th>Cantidad de Pisos</th>
+                    <th>Áreas Comunes</th>
+                    <th>Servicios Disponibles</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>041</td>
+                    <td>Juan Perez</td>
+                    <td>8</td>
+                    <td>-</td>
+                    <td>Villa Miralba</td>
+                    <td>6</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="RegisterCondominius"><span class="oi oi-eye"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
