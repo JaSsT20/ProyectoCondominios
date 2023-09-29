@@ -1,0 +1,129 @@
+@page "/R_Condominium"
+
+<div class="container">
+    <div class="card shadow-lg">
+        <div class="card-header">
+            <h3>Registro de Condominios.</h3>
+        </div>
+        <div class=card-body>
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-4">
+                <label>Condominio ID:</label>
+                <div class="input-group mb-3">
+                    <InputNumber class="form-control" @bind-Value="condominioId" aria-describedby="BotonBuscar" />
+                    <button class="btn btn-outline-primary" type="button" id="BotonBuscar"><i class="oi oi-magnifying-glass" /></button>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">país:</label>
+                    <InputText class="form-control" @bind-Value="pais" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Ciudad:</label>
+                    <InputText class="form-control" @bind-Value="ciudad" />
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Provincia:</label>
+                    <InputText class="form-control" @bind-Value="provincia" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Sector:</label>
+                    <InputText class="form-control" @bind-Value="sector" />
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Provincia:</label>
+                    <InputText class="form-control" @bind-Value="provincia" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Sector:</label>
+                    <InputText class="form-control" @bind-Value="sector" />
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Cant.Apartamentos:</label>
+                    <InputText class="form-control" @bind-Value="cant_Apartamentos" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Cant.Pisos:</label>
+                    <InputText class="form-control" @bind-Value="cant_Pisos" />
+                </div> 
+            </div>
+
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Cant.Areas comunes:</label>
+                    <InputText class="form-control" @bind-Value="cant_AreasComunes" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Precio de mantenimiento:</label>
+                    <InputNumber class="form-control" @bind-Value="precio_Mantenimiento" />
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Servicios disponibles:</label>
+                    <InputText class="form-control" @bind-Value="servicios_Disponibles" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">No.Contrato de propiedad:</label>
+                    <InputText class="form-control" @bind-Value="no_ContratoPropiedad" />
+                </div>           
+            </div>
+
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">No.Cédula:</label>
+                    <InputText class="form-control" @bind-Value="no_Cedula" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Nombre del propietario:</label>
+                    <InputText class="form-control" @bind-Value="nombre_Propietario" />
+                </div>                
+            </div>
+
+            <div class="col-6">
+                <label class="form-label">No.Celular:</label>
+                <InputText class="form-control" @bind-Value="no_Celular" />
+            </div>
+        </div>
+        <div class="card-footer d-flex justify-content-center">
+            <div class="btn-group">
+                <button type="submit" class="btn btn-outline-success">Guardar <i class="oi oi-document" /></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int condominioId;
+    private string pais;
+    private string ciudad;
+    private string provincia;
+    private string sector;
+    private string cant_Apartamentos;
+    private string cant_Pisos;
+    private string cant_AreasComunes;
+    private decimal precio_Mantenimiento;
+    private string servicios_Disponibles;
+    private string no_ContratoPropiedad;
+    private string no_Cedula;
+    private string nombre_Propietario;
+    private string no_Celular;
+}
