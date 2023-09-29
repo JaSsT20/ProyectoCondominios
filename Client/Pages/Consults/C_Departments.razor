@@ -1,0 +1,44 @@
+@page "/C_Departments"
+
+<div class="card">
+    <div class="card-header">
+        <h2>Consult of Departments</h2>
+    </div>
+
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="DepartamentoId" class="form-label">ID</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="DepartamentoId" disabled>
+                <button type="button" class="btn btn-outline-primary oi oi-magnifying-glass"></button>
+                <button type="button" class="btn btn-outline-primary oi oi-reload"></button>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Departamento ID</th>
+                    <th>Propietario</th>
+                    <th>Distribucion</th>
+                    <th>Estado</th>
+                    <th>Valor de Renta</th>
+                    <th>Condominio Perteneciente</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan Perez</td>
+                    <td>3 habitaciones, 2 baños, 1 comedor, 1 sala</td>
+                    <td>Disponible</td>
+                    <td>9,000</td>
+                    <td>Villa Miralba</td>
+                    <td><a href="R_Apartment"><span class="oi oi-eye"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

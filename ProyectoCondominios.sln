@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCondominios.Server", "Server\ProyectoCondominios.Server.csproj", "{79488586-B543-40B7-9469-645AAA52BAC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoCondominios.Server", "Server\ProyectoCondominios.Server.csproj", "{79488586-B543-40B7-9469-645AAA52BAC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCondominios.Client", "Client\ProyectoCondominios.Client.csproj", "{AC52D2E6-F5F8-4334-9DEB-19F67D91353E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoCondominios.Client", "Client\ProyectoCondominios.Client.csproj", "{AC52D2E6-F5F8-4334-9DEB-19F67D91353E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCondominios.Shared", "Shared\ProyectoCondominios.Shared.csproj", "{C8C9320F-5985-4D38-A8BB-6D3AD7421ED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoCondominios.Shared", "Shared\ProyectoCondominios.Shared.csproj", "{C8C9320F-5985-4D38-A8BB-6D3AD7421ED6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
