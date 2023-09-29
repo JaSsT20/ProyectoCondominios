@@ -1,0 +1,64 @@
+﻿@page "/R_Event"
+
+<div class="container">
+    <div class="card shadow-lg">
+        <div class="card-header">
+            <h3>Registro de Evento</h3>
+        </div>
+        <div class="card-body">
+            @*Evento ID*@
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-4">
+                <label>Evento ID:</label>
+                <div class="input-group mb-3">
+                    <InputNumber class="form-control" @bind-Value="eventoId" aria-describedby="BotonBuscar" />
+                    <button class="btn btn-outline-primary" type="button" id="BotonBuscar"><i class="oi oi-magnifying-glass" /></button>
+                </div>
+            </div>
+            @*Nombre del Evento*@
+            <div class="mb-3">
+                <label class="form-label">Nombre del Evento:</label>
+                <InputText class="form-control" @bind-Value="nombreEvento" />
+            </div>
+            @*Descripción*@
+            <div class="mb-3">
+                <label class="form-label">Descripción:</label>
+                <InputText class="form-control" @bind-Value="descripcion" />
+            </div>
+            @*Fecha y Hora*@
+            <div class="mb-3">
+                <label class="form-label">Fecha y Hora:</label>
+                <InputText class="form-control" @bind-Value="fechaHora" />
+            </div>
+            @*Lugar*@
+            <div class="mb-3">
+                <label class="form-label">Lugar:</label>
+                <InputText class="form-control" @bind-Value="lugar" />
+            </div>
+            @*Asistentes*@
+            <div class="mb-3">
+                <label class="form-label">Asistentes:</label>
+                <InputText class="form-control" @bind-Value="asistentes" />
+            </div>
+            @*Estado*@
+            <div class="mb-3">
+                <label class="form-label">Estado:</label>
+                <InputText class="form-control" @bind-Value="estado" />
+            </div>
+        </div>
+        <div class="card-footer d-flex justify-content-center">
+            <div class="btn-group">
+                <button type="submit" class="btn btn-outline-success">Guardar <i class="oi oi-document" /></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int eventoId;
+    private string nombreEvento;
+    private string descripcion;
+    private string fechaHora;
+    private string lugar;
+    private string asistentes;
+    private string estado;
+}

@@ -1,0 +1,47 @@
+﻿@page "/C_Events"
+
+<div class="card">
+    <div class="card-header">
+        <h2>Event Management</h2>
+    </div>
+
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="EventoId" class="form-label">ID</label>
+            <div class="input-group">
+                <input type="number" class="form-control" id="EventoId" disabled>
+                <button type="button" class="btn btn-outline-primary oi oi-magnifying-glass"></button>
+                <button type="button" class="btn btn-outline-primary oi oi-reload"></button>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Evento ID</th>
+                    <th>Nombre del Evento</th>
+                    <th>Descripción</th>
+                    <th>Fecha y Hora</th>
+                    <th>Lugar</th>
+                    <th>Asistentes</th>
+                    <th>Estado</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Reunión de Condominio</td>
+                    <td>Reunión mensual de la junta de condominio</td>
+                    <td>2023-10-15 18:00</td>
+                    <td>Salón de Reuniones</td>
+                    <td>15</td>
+                    <td>Programado</td>
+                    <td><a href="EventDetails"><span class="oi oi-eye"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
