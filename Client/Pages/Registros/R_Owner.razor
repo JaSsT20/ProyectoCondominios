@@ -1,0 +1,74 @@
+@page "/R_Owner"
+
+<div class="container">
+    <div class="card shadow-lg">
+        <div class="card-header">
+            <h3>Registro de Owner.</h3>
+        </div>
+        <div class=card-body>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-4">
+                <label>Condominio ID:</label>
+                <div class="input-group mb-3">
+                    <InputNumber class="form-control" @bind-Value="propietarioId" aria-describedby="BotonBuscar" />
+                    <button class="btn btn-outline-primary" type="button" id="BotonBuscar"><i class="oi oi-magnifying-glass" /></button>
+                </div>
+            </div>
+                <div class = "row">
+                    <div class="col-6">
+                        <label class="form-label">Nombres:</label>
+                        <InputText class="form-control" @bind-Value="nombres" />
+                    </div>
+
+                    <div class="col-6">
+                        <label class="form-label">Apellidos:</label>
+                        <InputText class="form-control" @bind-Value="apellidos" />
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <div class="col-6">
+                        <label class="form-label">Codigo del contrato:</label>
+                        <InputText class="form-control" @bind-Value="codigoContrato" />
+                    </div>
+
+                    <div class="col-6">
+                        <label class="form-label">Telefono:</label>
+                        <InputText class="form-control" @bind-Value="telefono" />
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <div class="col-6">
+                        <label class="form-label">Celular:</label>
+                        <InputText class="form-control" @bind-Value="celular" />
+                    </div>
+
+                    <div class="col-6">
+                        <label class="form-label">Correo:</label>
+                        <InputText class="form-control" @bind-Value="correo" />
+                    </div>
+                </div>
+
+                <div class="col-6">
+                        <label class="form-label">Fecha de adquisicion del apartamento:</label>
+                        <InputText class="form-control" @bind-Value="fechaApartamento" />
+                </div>
+            </div>
+        <div class="card-footer d-flex justify-content-center">
+            <div class="btn-group">
+                <button type="submit" class="btn btn-outline-success">Guardar <i class="oi oi-document" /></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int propietarioId;
+    private string nombres;
+    private string apellidos;
+    private string codigoContrato;
+    private string telefono;
+    private string celular;
+    private string correo;
+    private string fechaApartamento;
+}
