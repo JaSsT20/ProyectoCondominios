@@ -14,68 +14,91 @@
                     <button class="btn btn-outline-primary" type="button" id="BotonBuscar"><i class="oi oi-magnifying-glass" /></button>
                 </div>
             </div>
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">país:</label>
+                    <InputText class="form-control" @bind-Value="pais" />
+                </div>
 
-            <div class="mb-3">
-                <label class="form-label">país:</label>
-                <InputText class="form-control" @bind-Value="pais" />
+                <div class="col-6">
+                    <label class="form-label">Ciudad:</label>
+                    <InputText class="form-control" @bind-Value="ciudad" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Ciudad:</label>
-                <InputText class="form-control" @bind-Value="ciudad" />
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Provincia:</label>
+                    <InputText class="form-control" @bind-Value="provincia" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Sector:</label>
+                    <InputText class="form-control" @bind-Value="sector" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Provincia:</label>
-                <InputText class="form-control" @bind-Value="provincia" />
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Provincia:</label>
+                    <InputText class="form-control" @bind-Value="provincia" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Sector:</label>
+                    <InputText class="form-control" @bind-Value="sector" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Sector:</label>
-                <InputText class="form-control" @bind-Value="sector" />
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Cant.Apartamentos:</label>
+                    <InputText class="form-control" @bind-Value="cant_Apartamentos" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Cant.Pisos:</label>
+                    <InputText class="form-control" @bind-Value="cant_Pisos" />
+                </div> 
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Cant.Apartamentos:</label>
-                <InputText class="form-control" @bind-Value="cant_Apartamentos" />
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Cant.Areas comunes:</label>
+                    <InputText class="form-control" @bind-Value="cant_AreasComunes" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Precio de mantenimiento:</label>
+                    <InputNumber class="form-control" @bind-Value="precio_Mantenimiento" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Cant.Pisos:</label>
-                <InputText class="form-control" @bind-Value="cant_Pisos" />
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">Servicios disponibles:</label>
+                    <InputText class="form-control" @bind-Value="servicios_Disponibles" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">No.Contrato de propiedad:</label>
+                    <InputText class="form-control" @bind-Value="no_ContratoPropiedad" />
+                </div>           
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Cant.Areas comunes:</label>
-                <InputText class="form-control" @bind-Value="cant_AreasComunes" />
+            <div class = "row">
+                <div class="col-6">
+                    <label class="form-label">No.Cédula:</label>
+                    <InputText class="form-control" @bind-Value="no_Cedula" />
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Nombre del propietario:</label>
+                    <InputText class="form-control" @bind-Value="nombre_Propietario" />
+                </div>                
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Precio de mantenimiento:</label>
-                <InputNumber class="form-control" @bind-Value="precio_Mantenimiento" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Servicios disponibles:</label>
-                <InputText class="form-control" @bind-Value="servicios_Disponibles" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">No.Contrato de propiedad:</label>
-                <InputText class="form-control" @bind-Value="no_ContratoPropiedad" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label">No.Cédula:</label>
-                <InputText class="form-control" @bind-Value="no_Cedula" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Nombre del propietario:</label>
-                <InputText class="form-control" @bind-Value="nombre_Propietario" />
-            </div>
-
-            <div class="mb-3">
+            <div class="col-6">
                 <label class="form-label">No.Celular:</label>
                 <InputText class="form-control" @bind-Value="no_Celular" />
             </div>
