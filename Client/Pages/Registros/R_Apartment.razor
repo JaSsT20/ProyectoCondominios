@@ -14,29 +14,42 @@
                     <button class="btn btn-outline-primary" type="button" id="BotonBuscar"><i class="oi oi-magnifying-glass" /></button>
                 </div>
             </div>
-            @*Propetario*@
+            @*Propietario*@
             <div class="mb-3">
-                <label class="form-label">Propetario:</label>
-                <InputText class="form-control" @bind-Value="propietario" />
+                <label class="form-label">Propietario:</label>
+                <InputSelect class="form-select" @bind-Value="propietario">
+                    <option value="" hidden="hidden">Seleccione un propietario</option>
+                    @if(L_Propietarios.Count > 0)
+                    {
+                        @foreach(var item in L_Propietarios)
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    }
+                    else
+                    {
+                        <option value="">No hay propietarios disponibles</option>
+                    }
+                </InputSelect>
             </div>
             @*Estado*@
             <div class="mb-3">
-                <label class="form-label" for="Telefono">Estado:</label>
+                <label class="form-label" for="estado">Estado:</label>
                 <InputText class="form-control" @bind-Value="estado" />
             </div>
             @*Valor*@
             <div class="mb-3">
-                <label class="form-label" for="Cedula">Valor:</label>
+                <label class="form-label" for="valor">Valor:</label>
                 <InputText class="form-control" @bind-Value="valor" />
             </div>
             @*Distribucion*@
             <div class="mb-3">
-                <label class="form-label" for="Rnc">Distribucion:</label>
+                <label class="form-label" for="distribuicion">Distribucion:</label>
                 <InputText class="form-control" @bind-Value="distribucion" />
             </div>
             @*Condominio perteneciente a:*@
             <div class="mb-3">
-                <label class="form-label" for="Email">Condominio perteneciente a:</label>
+                <label class="form-label" for="condominio">Condominio perteneciente a:</label>
                 <InputText class="form-control" @bind-Value="condominio" />
             </div>
         </div>
@@ -55,4 +68,5 @@
     private string valor;
     private string distribucion;
     private string condominio;
+    private List<string> L_Propietarios = new List<string> { "Jose Bonilla", "Jasson Levid", "Robert Tejada" };
 }
